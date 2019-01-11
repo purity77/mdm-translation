@@ -1,2 +1,3 @@
-# Mnemonic-Descent-Method-A-recurrent-process-applied-for-end-to-end-face-alignment-
-自用mdm翻译
+## MDM
+### 摘要
+级联回归最近已经成为解决非线性最小二乘问题的适用方法如可变形的人脸对齐.对于给定尺寸大小的训练集,
