@@ -38,7 +38,7 @@ Asthana，Incremental face alignment in the wild提出了一种SDM类型方法�
 
 我们提出的方法也让人想起以前提出的人脸对齐深度学习方法。Deep Convolutional Network Cascade for Facial Point Detection提出使用独立的卷积神经网络来表现由粗到细的形状搜寻。CFAN也使用粗到细的形状搜索，首先使用全局搜索，然后使用一组本地堆积的自动编码器。然而，每个自动编码器的训练时孤立的。Learning Deep Representation for Face Alignment with Auxiliary Attributes提出一种将辅助信息融入拟合过程的新方法。与其他相关方法不同的是，他们不包含级联网络，而是将问题框定为多任务学习问题。Facial Feature Tracking Under Varying Facial Expressions and Face Poses Based on Restricted Boltzmann Machines 使用深度置信网络来训练更加灵活的过程，但不要学习任务卷积特征。Deep Regression for Face Alignment 提出联合学习一个级联的线性回归器。虽然这个回归器通过反馈联合更新，但是其其使用线性回归器并且使用手工制作的特征而不是直接从图像中提取特征。同时在Deep Regression for Face Alignment 结果的中我们可以发现在对齐精度上并没有超过独立训练的级联回归器。在接下来的第三部分，我们将系统得介绍人脸对齐的问题并简要的描述SDM算法。
 ### 级联回归
-人脸对齐的定义是在图像上找到一组稀疏基准点，![集合](mdm-translation/1.jpg)
+人脸对齐的定义是在图像上找到一组稀疏基准点，![集合](https://github.com/purity77/mdm-translation/blob/master/1.jpg)
 
 
 
