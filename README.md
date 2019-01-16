@@ -60,7 +60,12 @@ Asthana，Incremental face alignment in the wild提出了一种SDM类型方法�
 
     *     训练集 LFPW(811张） HELEN(2000张) AFW(337张) 
     *     挑战子集 IBUG(135)张
-    *     
+    *     共用子集 LFPW(224) HELEN(330)
+    *     完全子集 挑战＋共用
+
+上述注释实际上是作为300W人脸对齐竞赛的训练/验证集提供的，使用另一组图像进行严格的评估，被称作300W测试集。这个300W包含600个图像分成两个子集，包括indoor和outdoor，那些数据据说是从与IBUG数据集类似的分布中提取的。
+#### 评估
+不幸的是，没有一致的方法报告错误的人脸对齐，即使是对于常见的300W测试集。这主要是由于误差归一化的变化。为了与300W比赛[ The first facial landmark localization challenge]的结果保持一致，我们使用了他们对眼间距的定义，即外眼角之间的距离。我们认为，平均误差，特别是没有伴随标准差的平均误差，并不是一个非常有用的误差度量标准，因为它们可能会被少量非常差的拟合严重偏差。因此，我们以CED曲线的形式给出我们的评价，因为这与[ The first facial landmark localization challenge]得到的结果保持一致。我们已经从CED曲线中计算出了一些进一步的统计数据作为曲线下面积(area-under-the-curve, AUC)和每种方法的故障率(我们认为任何点对点误差大于0.08的拟合都是失败的)
 
 
 
